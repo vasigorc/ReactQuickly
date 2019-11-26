@@ -1,4 +1,5 @@
 let helloWorldReactElement = <h1>Hello world!</h1>
+
 class HelloWorld extends React.Component {
     render() {
         return <h1 {...this.properties}>

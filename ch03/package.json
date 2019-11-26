@@ -2,21 +2,21 @@
   "name": "ch03",
   "version": "1.0.0",
   "description": "",
-  "babel": {
-    "presets": [
-      "react", "es2015"
-    ]
-  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel js/script.jsx -o js/script.js -w"
+    "build": "./node_modules/.bin/babel hello-world-jsx/jsx/script.jsx -o hello-world-jsx/js/script.js -w"
   },
   "keywords": [
     "react.js"
   ],
   "author": "Azat Mardan",
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-react": "^6.24.1"
