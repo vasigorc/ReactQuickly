@@ -1,0 +1,22 @@
+{
+  "name": "ch04",
+  "version": "1.0.0",
+  "description": "Chapter 4 from React Quickly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-clock": "./node_modules/.bin/babel clock/jsx -d clock/js",
+    "build-stateless-clock": "./node_modules/.bin/babel statelessClock/jsx -d statelessClock/js"
+  },
+  "author": "Azat Mardan",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
