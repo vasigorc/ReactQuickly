@@ -2,14 +2,14 @@ class Clock extends React.Component {
     constructor(props) {
         super(props)
         this.launchClock()
-        this.state = {currentTime: getCurrentTime()}
+        this.state = {currentTime: this.getCurrentTime()}
     }
 
     launchClock() {
         setInterval(()=>{
             console.log('Updating time...')
             this.setState({
-                currentTime: getCurrentTime()
+                currentTime: this.getCurrentTime()
             })
         }, 1000)
     }
