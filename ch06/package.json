@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-onclick-parent": "./node_modules/.bin/babel onclick-parent/jsx -d onclick-parent/js",
     "build-radio": "./node_modules/.bin/babel radio/jsx -d radio/js",
-    "build-slider": "./node_modules/.bin/babel slider/jsx -d slider/js",
-    "build-all": "npm run build-onclick-parent && npm run build-radio && npm run build-slider"
+    "build-all": "npm run build-onclick-parent && npm run build-radio"
   },
   "author": "Azat Mardan",
   "license": "MIT",
