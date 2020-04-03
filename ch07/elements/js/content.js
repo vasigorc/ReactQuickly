@@ -79,6 +79,11 @@ class Content extends React.Component {
                 ),
                 React.createElement("hr", null),
                 React.createElement(
+                    "h2",
+                    null,
+                    "input: checkbox"
+                ),
+                React.createElement(
                     "label",
                     null,
                     React.createElement("input", { type: "checkbox",
