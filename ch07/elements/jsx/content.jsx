@@ -64,6 +64,7 @@ class Content extends React.Component {
                         Polymer
                     </label>
                     <hr/>
+                    <h2>input: checkbox</h2>
                     <label>
                         <input type="checkbox"
                             name="checkboxGroup"
