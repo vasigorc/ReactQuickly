@@ -1,9 +1,13 @@
 const assert = require('assert')
-const radioGroup = require('./js/radio-group.js')
+
+function capitalize(word) {
+    if (typeof word != 'string') return ''
+    return word.charAt(0).toUpperCase() + word.slice(1)
+}
 
 describe('capitalize', function() {
     it('should capitalize the first letter in `angular`', function() {
-        const actual = radioGroup.capitalize('angular')
+        const actual = capitalize('angular')
         assert.equal(actual, 'Angular')
     })
 })
