@@ -37,77 +37,56 @@ class Content extends React.Component {
 
     render() {
         return React.createElement(
-            "div",
-            { className: "container" },
+            'div',
+            { className: 'container' },
             React.createElement(
-                "form",
+                'form',
                 null,
                 React.createElement(
-                    "h2",
+                    'h2',
                     null,
-                    "input: radio"
+                    'input: radio'
+                ),
+                React.createElement(RadioGroup, { titles: ['angular', 'react', 'polymer'],
+                    radioGroup: Array.from(this.state.radioGroup),
+                    handler: this.handleRadio }),
+                React.createElement('hr', null),
+                React.createElement(
+                    'h2',
+                    null,
+                    'input: checkbox'
                 ),
                 React.createElement(
-                    "label",
+                    'label',
                     null,
-                    React.createElement(Radio, { title: "angular",
-                        value: this.state.radioGroup['angular'],
-                        handler: this.handleRadio }),
-                    "Angular"
-                ),
-                React.createElement(
-                    "label",
-                    null,
-                    React.createElement(Radio, { title: "react",
-                        value: this.state.radioGroup['react'],
-                        handler: this.handleRadio }),
-                    "React"
-                ),
-                React.createElement(
-                    "label",
-                    null,
-                    React.createElement(Radio, { title: "polymer",
-                        value: this.state.radioGroup['polymer'],
-                        handler: this.handleRadio }),
-                    "Polymer"
-                ),
-                React.createElement("hr", null),
-                React.createElement(
-                    "h2",
-                    null,
-                    "input: checkbox"
-                ),
-                React.createElement(
-                    "label",
-                    null,
-                    React.createElement(Checkbox, { title: "node",
+                    React.createElement(Checkbox, { title: 'node',
                         value: this.state.checkboxGroup['node'],
                         handler: this.handleCheckbox }),
-                    "Node"
+                    'Node'
                 ),
                 React.createElement(
-                    "label",
+                    'label',
                     null,
-                    React.createElement(Checkbox, { title: "react",
+                    React.createElement(Checkbox, { title: 'react',
                         value: this.state.checkboxGroup['react'],
                         handler: this.handleCheckbox }),
-                    "React"
+                    'React'
                 ),
                 React.createElement(
-                    "label",
+                    'label',
                     null,
-                    React.createElement(Checkbox, { title: "express",
+                    React.createElement(Checkbox, { title: 'express',
                         value: this.state.checkboxGroup['express'],
                         handler: this.handleCheckbox }),
-                    "Express"
+                    'Express'
                 ),
                 React.createElement(
-                    "label",
+                    'label',
                     null,
-                    React.createElement(Checkbox, { title: "mongodb",
+                    React.createElement(Checkbox, { title: 'mongodb',
                         value: this.state.checkboxGroup['mongodb'],
                         handler: this.handleCheckbox }),
-                    "MongoDB"
+                    'MongoDB'
                 )
             )
         );
