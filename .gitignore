@@ -5,4 +5,5 @@ logs
 #Dependency directories
 node_modules
 
-
+#VSCode config folder
+**/.vscode
