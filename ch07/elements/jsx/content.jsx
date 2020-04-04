@@ -39,24 +39,9 @@ class Content extends React.Component {
         return <div className="container">
                 <form>
                     <h2>input: radio</h2>
-                    <label>
-                        <Radio title="angular" 
-                                value={this.state.radioGroup['angular']}
+                    <RadioGroup titles={['angular', 'react', 'polymer']}
+                                radioGroup={Array.from(this.state.radioGroup)}
                                 handler={this.handleRadio} />
-                        Angular
-                    </label>
-                    <label>
-                        <Radio title="react" 
-                                value={this.state.radioGroup['react']}
-                                handler={this.handleRadio} />
-                        React
-                    </label>
-                    <label>
-                        <Radio title="polymer" 
-                                    value={this.state.radioGroup['polymer']}
-                                    handler={this.handleRadio} />
-                        Polymer
-                    </label>
                     <hr/>
                     <h2>input: checkbox</h2>
                     <label>
