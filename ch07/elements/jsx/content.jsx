@@ -40,61 +40,47 @@ class Content extends React.Component {
                 <form>
                     <h2>input: radio</h2>
                     <label>
-                        <input type="radio"
-                            name="radioGroup"
-                            value='angular'
-                            checked={this.state.radioGroup['angular']}
-                            onChange={this.handleRadio} />
+                        <Radio title="angular" 
+                                value={this.state.radioGroup['angular']}
+                                handler={this.handleRadio} />
                         Angular
                     </label>
                     <label>
-                        <input type="radio"
-                            name="radioGroup"
-                            value='react'
-                            checked={this.state.radioGroup['react']}
-                            onChange={this.handleRadio} />
+                        <Radio title="react" 
+                                value={this.state.radioGroup['react']}
+                                handler={this.handleRadio} />
                         React
                     </label>
                     <label>
-                        <input type="radio"
-                            name="radioGroup"
-                            value="polymer"
-                            checked={this.state.radioGroup['polymer']}
-                            onChange={this.handleRadio} />
+                        <Radio title="polymer" 
+                                    value={this.state.radioGroup['polymer']}
+                                    handler={this.handleRadio} />
                         Polymer
                     </label>
                     <hr/>
                     <h2>input: checkbox</h2>
                     <label>
-                        <input type="checkbox"
-                            name="checkboxGroup"
-                            value='node'
-                            checked={this.state.checkboxGroup['node']}
-                            onChange={this.handleCheckbox} />
+                        <Checkbox title="node"
+                                        value={this.state.checkboxGroup['node']}
+                                        handler= {this.handleCheckbox} />
                         Node
                     </label>
                     <label>
-                        <input type="checkbox"
-                            name="checkboxGroup"
-                            value='react'
-                            checked={this.state.checkboxGroup['react']}
-                            onChange={this.handleCheckbox} />
+                        <Checkbox title="react"
+                                            value={this.state.checkboxGroup['react']}
+                                            handler= {this.handleCheckbox} />
                         React
                     </label>
                     <label>
-                        <input type="checkbox"
-                            name="checkboxGroup"
-                            value="express"
-                            checked={this.state.checkboxGroup['express']}
-                            onChange={this.handleCheckbox} />
+                        <Checkbox title="express"
+                                            value={this.state.checkboxGroup['express']}
+                                            handler= {this.handleCheckbox} />
                         Express
                     </label>
                     <label>
-                        <input type="checkbox"
-                            name="checkboxGroup"
-                            value='mongodb'
-                            checked={this.state.checkboxGroup['mongodb']}
-                            onChange={this.handleCheckbox} />
+                        <Checkbox title="mongodb"
+                                            value={this.state.checkboxGroup['mongodb']}
+                                            handler= {this.handleCheckbox} />
                         MongoDB
                     </label>
             </form>
