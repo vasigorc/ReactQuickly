@@ -1,4 +1,4 @@
-class RadioGroup extends React.Component {
+class CheckboxGroup extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -9,12 +9,12 @@ class RadioGroup extends React.Component {
     }
 
     render() {
-        const namedRadioButtons = this.props.titles.map(name => {
+        const namedCheckboxes = this.props.titles.map(name => {
             return React.createElement(
                 'label',
                 null,
-                React.createElement(Radio, { title: name,
-                    value: this.props.radioGroup[{ name }],
+                React.createElement(Checkbox, { title: name,
+                    value: this.props.checkboxGroup[{ name }],
                     handler: this.props.handler }),
                 this.capitalize(name)
             );
@@ -23,7 +23,7 @@ class RadioGroup extends React.Component {
         return React.createElement(
             'div',
             null,
-            namedRadioButtons
+            namedCheckboxes
         );
     }
 }
