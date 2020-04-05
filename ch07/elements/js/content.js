@@ -1,10 +1,13 @@
 class Content extends React.Component {
     constructor(props) {
         super(props);
+        this.handleInput = this.handleInput.bind(this);
         this.handleRadio = this.handleRadio.bind(this);
         this.handleCheckbox = this.handleCheckbox.bind(this);
+        this.handleSelectChange = this.handleSelectChange.bind(this);
 
         this.state = {
+            title: '',
             radioGroup: {
                 angular: false,
                 // set the default checked radio button
@@ -15,8 +18,12 @@ class Content extends React.Component {
                 react: true,
                 express: false,
                 mongodb: false
-            }
+            }, selectedValue: 'node'
         };
+    }
+
+    handleInput(event) {
+        this.setState({ title: event.target.value });
     }
 
     handleRadio(event) {
@@ -35,6 +42,10 @@ class Content extends React.Component {
         this.setState({ checkboxGroup: obj });
     }
 
+    handleSelectChange(event) {
+        this.setState({ selectedValue: event.target.value });
+    }
+
     render() {
         return React.createElement(
             'div',
@@ -42,6 +53,14 @@ class Content extends React.Component {
             React.createElement(
                 'form',
                 null,
+                React.createElement(
+                    'h2',
+                    null,
+                    'input: input'
+                ),
+                React.createElement('input', { type: 'text', name: 'title', value: this.state.title,
+                    onChange: this.handleInput }),
+                React.createElement('hr', null),
                 React.createElement(
                     'h2',
                     null,
@@ -58,7 +77,17 @@ class Content extends React.Component {
                 ),
                 React.createElement(CheckboxGroup, { titles: ['node', 'react', 'express', 'mongodb'],
                     checkboxGroup: Array.from(this.state.checkboxGroup),
-                    handler: this.handleCheckbox })
+                    handler: this.handleCheckbox }),
+                React.createElement('hr', null),
+                React.createElement(
+                    'h2',
+                    null,
+                    'input: single select'
+                ),
+                React.createElement(Select, { titles: ['ruby', 'node', 'python'],
+                    selectedValue: this.state.selectedValue,
+                    handler: this.handleSelectChange,
+                    isMultiple: false })
             )
         );
     }
