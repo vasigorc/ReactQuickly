@@ -27,5 +27,3 @@ class RadioGroup extends React.Component {
         );
     }
 }
-
-module.exports = RadioGroup;

@@ -44,30 +44,9 @@ class Content extends React.Component {
                                 handler={this.handleRadio} />
                     <hr/>
                     <h2>input: checkbox</h2>
-                    <label>
-                        <Checkbox title="node"
-                                        value={this.state.checkboxGroup['node']}
-                                        handler= {this.handleCheckbox} />
-                        Node
-                    </label>
-                    <label>
-                        <Checkbox title="react"
-                                            value={this.state.checkboxGroup['react']}
-                                            handler= {this.handleCheckbox} />
-                        React
-                    </label>
-                    <label>
-                        <Checkbox title="express"
-                                            value={this.state.checkboxGroup['express']}
-                                            handler= {this.handleCheckbox} />
-                        Express
-                    </label>
-                    <label>
-                        <Checkbox title="mongodb"
-                                            value={this.state.checkboxGroup['mongodb']}
-                                            handler= {this.handleCheckbox} />
-                        MongoDB
-                    </label>
+                    <CheckboxGroup titles={['node', 'react', 'express', 'mongodb']}
+                                    checkboxGroup={Array.from(this.state.checkboxGroup)}
+                                    handler={this.handleCheckbox} />
             </form>
         </div>
     }

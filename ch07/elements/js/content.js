@@ -56,38 +56,9 @@ class Content extends React.Component {
                     null,
                     'input: checkbox'
                 ),
-                React.createElement(
-                    'label',
-                    null,
-                    React.createElement(Checkbox, { title: 'node',
-                        value: this.state.checkboxGroup['node'],
-                        handler: this.handleCheckbox }),
-                    'Node'
-                ),
-                React.createElement(
-                    'label',
-                    null,
-                    React.createElement(Checkbox, { title: 'react',
-                        value: this.state.checkboxGroup['react'],
-                        handler: this.handleCheckbox }),
-                    'React'
-                ),
-                React.createElement(
-                    'label',
-                    null,
-                    React.createElement(Checkbox, { title: 'express',
-                        value: this.state.checkboxGroup['express'],
-                        handler: this.handleCheckbox }),
-                    'Express'
-                ),
-                React.createElement(
-                    'label',
-                    null,
-                    React.createElement(Checkbox, { title: 'mongodb',
-                        value: this.state.checkboxGroup['mongodb'],
-                        handler: this.handleCheckbox }),
-                    'MongoDB'
-                )
+                React.createElement(CheckboxGroup, { titles: ['node', 'react', 'express', 'mongodb'],
+                    checkboxGroup: Array.from(this.state.checkboxGroup),
+                    handler: this.handleCheckbox })
             )
         );
     }
