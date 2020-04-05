@@ -1,10 +1,13 @@
 class Content extends React.Component {
     constructor(props) {
         super(props)
+        this.handleInput = this.handleInput.bind(this)
         this.handleRadio = this.handleRadio.bind(this)
         this.handleCheckbox = this.handleCheckbox.bind(this)
+        this.handleSelectChange = this.handleSelectChange.bind(this)
 
         this.state = {
+            title: '',
             radioGroup: {
                 angular: false,
                 // set the default checked radio button
@@ -15,8 +18,12 @@ class Content extends React.Component {
                 react: true,
                 express: false,
                 mongodb: false
-            }
+            }, selectedValue: 'node'
         }
+    }
+
+    handleInput(event) {
+        this.setState({title: event.target.value})
     }
 
     handleRadio(event) {
@@ -35,9 +42,17 @@ class Content extends React.Component {
         this.setState({checkboxGroup: obj})
     }
 
+    handleSelectChange(event) {
+        this.setState({selectedValue: event.target.value})
+    }
+
     render() {
         return <div className="container">
                 <form>
+                    <h2>input: input</h2>
+                    <input type="text" name="title" value={this.state.title}
+                            onChange={this.handleInput} />
+                    <hr/>
                     <h2>input: radio</h2>
                     <RadioGroup titles={['angular', 'react', 'polymer']}
                                 radioGroup={Array.from(this.state.radioGroup)}
@@ -47,6 +62,12 @@ class Content extends React.Component {
                     <CheckboxGroup titles={['node', 'react', 'express', 'mongodb']}
                                     checkboxGroup={Array.from(this.state.checkboxGroup)}
                                     handler={this.handleCheckbox} />
+                    <hr/>
+                    <h2>input: single select</h2>
+                    <Select titles={['ruby', 'node', 'python']}
+                            selectedValue={this.state.selectedValue}
+                            handler={this.handleSelectChange}
+                            isMultiple={false} />
             </form>
         </div>
     }
