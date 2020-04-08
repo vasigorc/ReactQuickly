@@ -1,0 +1,29 @@
+{
+  "name": "ch07",
+  "version": "1.0.0",
+  "description": "Chapter 8 from React Quickly",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build-prop-types": "babel prop-types/jsx -d prop-types/js",
+    "build-all": "npm run build-prop-types"
+  },
+  "author": "Azat Mardan",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "bootstrap": "^3.4.1",
+    "mocha": "^7.1.1"
+  },
+  "type": "module"
+}
