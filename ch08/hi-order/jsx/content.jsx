@@ -1,3 +1,6 @@
+import { LoadWebsite } from './load-website'
+import { Button, Link, Logo } from './elements'
+
 const EnhancedButton = LoadWebsite(Button)
 const EnhancedLink = LoadWebsite(Link)
 const EnhancedLogo = LoadWebsite(Logo)
@@ -20,3 +23,5 @@ class Content extends React.Component {
         )
     }
 }
+
+export { EnhancedButton, EnhancedLink, EnhancedLogo, Content }
