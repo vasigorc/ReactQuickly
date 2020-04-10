@@ -32,3 +32,5 @@ const LoadWebsite = (Component) => {
     _LoadWebsite.displayName = 'EnhancedComponent'
     return _LoadWebsite
 }
+
+export { LoadWebsite }
