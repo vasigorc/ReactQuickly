@@ -1,0 +1,34 @@
+{
+  "name": "ch09",
+  "version": "1.0.0",
+  "description": "Chapter 9 from React Quickly + browserify + express",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build-menu": "babel menu/jsx -d menu/js",
+    "build-all": "npm run build-menu",
+    "bundle": "browserify menu/js/script.js -t babelify -o menu/js/bundle.js -d"
+  },
+  "author": "Azat Mardan, Vasile Gorcinschi",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^8.0.0",
+    "bootstrap": "^3.4.1",
+    "minimist": ">=0.2.1",
+    "mocha": "^7.1.1"
+  },
+  "type": "module"
+}
