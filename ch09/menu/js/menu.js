@@ -9,10 +9,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _link = require('./link');
 
-var _link2 = _interopRequireDefault(_link);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -39,7 +35,7 @@ var Menu = function (_React$Component) {
                     return React.createElement(
                         'div',
                         { key: i },
-                        React.createElement(_link2.default, { label: v })
+                        React.createElement(_link.Link, { label: v })
                     );
                 })
             );
@@ -50,4 +46,4 @@ var Menu = function (_React$Component) {
 }(React.Component);
 
 exports.Menu = Menu;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2pzeC9tZW51LmpzeCJdLCJuYW1lcyI6WyJNZW51IiwibWVudUl0ZW1zIiwibWFwIiwidiIsImkiLCJSZWFjdCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7Ozs7Ozs7Ozs7OztJQUVNQSxJOzs7Ozs7Ozs7OztpQ0FDTztBQUNMLGdCQUFNQyxZQUFZLENBQ2QsTUFEYyxFQUNOLE9BRE0sRUFDRyxVQURILEVBQ2UsV0FEZixFQUM0QixZQUQ1QixDQUFsQjtBQUdBLG1CQUFPO0FBQUE7QUFBQTtBQUNGQSwwQkFBVUMsR0FBVixDQUFjLFVBQUNDLENBQUQsRUFBSUMsQ0FBSixFQUFVO0FBQ3JCLDJCQUFPO0FBQUE7QUFBQSwwQkFBSyxLQUFLQSxDQUFWO0FBQ0gsNENBQUMsY0FBRCxJQUFNLE9BQU9ELENBQWI7QUFERyxxQkFBUDtBQUdILGlCQUpBO0FBREUsYUFBUDtBQU9IOzs7O0VBWmNFLE1BQU1DLFM7O1FBZWhCTixJLEdBQUFBLEkiLCJmaWxlIjoibWVudS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJy4vbGluaydcblxuY2xhc3MgTWVudSBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG4gICAgcmVuZGVyKCkge1xuICAgICAgICBjb25zdCBtZW51SXRlbXMgPSBbXG4gICAgICAgICAgICAnSG9tZScsICdBYm91dCcsICdTZXJ2aWNlcycsICdQb3J0Zm9saW8nLCAnQ29udGFjdCBVcydcbiAgICAgICAgXVxuICAgICAgICByZXR1cm4gPGRpdj5cbiAgICAgICAgICAgIHttZW51SXRlbXMubWFwKCh2LCBpKSA9PiB7XG4gICAgICAgICAgICAgICAgcmV0dXJuIDxkaXYga2V5PXtpfT5cbiAgICAgICAgICAgICAgICAgICAgPExpbmsgbGFiZWw9e3Z9Lz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIH0pfVxuICAgICAgICA8L2Rpdj5cbiAgICB9XG59XG5cbmV4cG9ydCB7IE1lbnUgfSJdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2pzeC9tZW51LmpzeCJdLCJuYW1lcyI6WyJNZW51IiwibWVudUl0ZW1zIiwibWFwIiwidiIsImkiLCJSZWFjdCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7Ozs7Ozs7O0lBRU1BLEk7Ozs7Ozs7Ozs7O2lDQUNPO0FBQ0wsZ0JBQU1DLFlBQVksQ0FDZCxNQURjLEVBQ04sT0FETSxFQUNHLFVBREgsRUFDZSxXQURmLEVBQzRCLFlBRDVCLENBQWxCO0FBR0EsbUJBQU87QUFBQTtBQUFBO0FBQ0ZBLDBCQUFVQyxHQUFWLENBQWMsVUFBQ0MsQ0FBRCxFQUFJQyxDQUFKLEVBQVU7QUFDckIsMkJBQU87QUFBQTtBQUFBLDBCQUFLLEtBQUtBLENBQVY7QUFBYSw0Q0FBQyxVQUFELElBQU0sT0FBT0QsQ0FBYjtBQUFiLHFCQUFQO0FBQ0gsaUJBRkE7QUFERSxhQUFQO0FBS0g7Ozs7RUFWY0UsTUFBTUMsUzs7UUFhaEJOLEksR0FBQUEsSSIsImZpbGUiOiJtZW51LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTGluayB9IGZyb20gJy4vbGluaydcblxuY2xhc3MgTWVudSBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG4gICAgcmVuZGVyKCkge1xuICAgICAgICBjb25zdCBtZW51SXRlbXMgPSBbXG4gICAgICAgICAgICAnSG9tZScsICdBYm91dCcsICdTZXJ2aWNlcycsICdQb3J0Zm9saW8nLCAnQ29udGFjdCBVcydcbiAgICAgICAgXVxuICAgICAgICByZXR1cm4gPGRpdj5cbiAgICAgICAgICAgIHttZW51SXRlbXMubWFwKCh2LCBpKSA9PiB7XG4gICAgICAgICAgICAgICAgcmV0dXJuIDxkaXYga2V5PXtpfT48TGluayBsYWJlbD17dn0gLz48L2Rpdj5cbiAgICAgICAgICAgIH0pfVxuICAgICAgICA8L2Rpdj5cbiAgICB9XG59XG5cbmV4cG9ydCB7IE1lbnUgfSJdfQ==

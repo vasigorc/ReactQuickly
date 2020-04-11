@@ -1,4 +1,4 @@
-import Link from './link'
+import { Link } from './link'
 
 class Menu extends React.Component {
     render() {
@@ -7,9 +7,7 @@ class Menu extends React.Component {
         ]
         return <div>
             {menuItems.map((v, i) => {
-                return <div key={i}>
-                    <Link label={v}/>
-                </div>
+                return <div key={i}><Link label={v} /></div>
             })}
         </div>
     }
