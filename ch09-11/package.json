@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "build": "babel projects/jsx -d projects/js",
-    "bundle": "browserify projects/js/script.js -t babelify -o projects/js/bundle.js -d"
+    "bundle:menu": "browserify projects/js/menuScript.js -t babelify -o projects/js/menuApp.js -d"
   },
   "author": "Azat Mardan, Vasile Gorcinschi",
   "license": "MIT",
