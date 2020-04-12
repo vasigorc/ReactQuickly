@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "build-menu": "babel menu/jsx -d menu/js",
-    "build-all": "npm run build-menu",
-    "bundle": "browserify menu/js/script.js -t babelify -o menu/js/bundle.js -d"
+    "build": "babel projects/jsx -d projects/js",
+    "bundle": "browserify projects/js/script.js -t babelify -o projects/js/bundle.js -d"
   },
   "author": "Azat Mardan, Vasile Gorcinschi",
   "license": "MIT",
