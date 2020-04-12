@@ -13,8 +13,8 @@ app.get('', (req, res) => {
 })
 
 // endpoint for Chapter 10's "Tooltip" project
-app.get('tooltip', (req, res) => {
-
+app.get('/tooltip', (req, res) => {
+    res.sendFile(path.join(viewsPath, './tooltip.html'))
 })
 
 // rest end point to get menu items (Homework 9.4)
