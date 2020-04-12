@@ -6,9 +6,15 @@ const app = express();
 const menusFile = fs.readFileSync(path.join(__dirname, './resources/menus.json'))
 
 app.use(express.static(__dirname))
+const viewsPath = path.join(__dirname, '/views/')
 
 app.get('', (req, res) => {
-    res.sendFile(path.join(__dirname, './index.html'))
+    res.sendFile(path.join(viewsPath, './index.html'))
+})
+
+// endpoint for Chapter 10's "Tooltip" project
+app.get('/tooltip', (req, res) => {
+    res.sendFile(path.join(viewsPath, './tooltip.html'))
 })
 
 // rest end point to get menu items (Homework 9.4)
