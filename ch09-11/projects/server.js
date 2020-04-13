@@ -17,6 +17,11 @@ app.get('/tooltip', (req, res) => {
     res.sendFile(path.join(viewsPath, './tooltip.html'))
 })
 
+// endpoint for Chapter 11's "Timer" project
+app.get('/timer', (req, res) => {
+    res.sendFile(path.join(viewsPath, './timer.html'))
+})
+
 // rest end point to get menu items (Homework 9.4)
 app.get('/menus', (req, res) => {
         return res.status(200).send(JSON.parse(menusFile))
