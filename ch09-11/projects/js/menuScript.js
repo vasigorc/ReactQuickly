@@ -1,0 +1,6 @@
+'use strict';
+
+var _menu = require('./menu');
+
+ReactDOM.render(React.createElement(_menu.Menu, null), document.getElementById('menu'));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2pzeC9tZW51U2NyaXB0LmpzeCJdLCJuYW1lcyI6WyJSZWFjdERPTSIsInJlbmRlciIsImRvY3VtZW50IiwiZ2V0RWxlbWVudEJ5SWQiXSwibWFwcGluZ3MiOiI7O0FBQUE7O0FBRUFBLFNBQVNDLE1BQVQsQ0FDSSxvQkFBQyxVQUFELE9BREosRUFFSUMsU0FBU0MsY0FBVCxDQUF3QixNQUF4QixDQUZKIiwiZmlsZSI6Im1lbnVTY3JpcHQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBNZW51IH0gZnJvbSAnLi9tZW51J1xuXG5SZWFjdERPTS5yZW5kZXIoXG4gICAgPE1lbnUgLz4sXG4gICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21lbnUnKVxuKSJdfQ==

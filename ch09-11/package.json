@@ -1,13 +1,14 @@
 {
-  "name": "ch09",
+  "name": "ch09-11",
   "version": "1.0.0",
-  "description": "Chapter 9 from React Quickly + browserify + express",
+  "description": "Chapters 9 - 11 from React Quickly + browserify + express",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "build-menu": "babel menu/jsx -d menu/js",
-    "build-all": "npm run build-menu",
-    "bundle": "browserify menu/js/script.js -t babelify -o menu/js/bundle.js -d"
+    "build": "babel projects/jsx -d projects/js",
+    "bundle:menu": "browserify projects/js/menuScript.js -t babelify -o projects/js/menuApp.js -d",
+    "bundle:tooltip": "browserify projects/js/tooltip.js -t babelify -o projects/js/tooltipApp.js -d",
+    "bundle:timer": "browserify projects/js/timerwrapper.js -t babelify -o projects/js/timerApp.js -d"
   },
   "author": "Azat Mardan, Vasile Gorcinschi",
   "license": "MIT",
