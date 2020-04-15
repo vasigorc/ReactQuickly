@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "build": "babel email-webpack/jsx -d email-webpack/js"
+    "build": "./node_modules/.bin/webpack -w",
+    "wds": "./node_modules/.bin/webpack-dev-server --config --webpack.dev.config.js"
   },
   "author": "Azat Mardan, Vasile Gorcinschi",
   "license": "MIT",
@@ -16,7 +17,7 @@
     ]
   },
   "devDependencies": {
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^7.1.5",
     "babel-core": "^6.26.3",
     "css-loader": "^1.0.0",
     "react": "^16.5.2",
@@ -31,6 +32,7 @@
     "minimist": ">=0.2.1",
     "mocha": "^7.1.1",
     "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
   },
   "type": "module"
