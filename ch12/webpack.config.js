@@ -1,4 +1,5 @@
 module.exports = {
+    mode: 'development',
     // defines the file to start bundling (entry-point)
     entry: './email-webpack/jsx/app.jsx',
     output: {
