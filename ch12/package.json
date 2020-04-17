@@ -1,0 +1,42 @@
+{
+  "name": "ch12",
+  "version": "1.0.0",
+  "description": "Chapter 12 from React Quickly",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --global require,__dirname ./",
+    "test": "mocha",
+    "build": "./node_modules/.bin/webpack -w",
+    "wds": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js"
+  },
+  "author": "Azat Mardan, Vasile Gorcinschi",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "bootstrap": "^3.4.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "minimist": ">=0.2.1",
+    "mocha": "^7.1.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.11",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "type": "module"
+}
