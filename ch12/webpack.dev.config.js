@@ -3,7 +3,7 @@ const webpack = require('webpack')
 module.exports = {
     // defines the file to start bundling (entry-point)
     entry: [
-        'webpack-dev-server/client/?http:://localhost:8080/email-webpack',
+        'webpack-dev-server/client/?http://localhost:8080/email-webpack',
         './email-webpack/jsx/app.jsx'
     ],
     output: {
@@ -27,8 +27,7 @@ module.exports = {
         ]
     },
     devServer: {
-        hot: true,
-        contentBase: '/email-webpack/js/'
+        hot: true
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
