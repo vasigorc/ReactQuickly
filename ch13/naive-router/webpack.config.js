@@ -3,9 +3,9 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   // defines the file to start bundling (entry-point)
-  entry: './naive-router/jsx/app.jsx',
+  entry: './jsx/app.jsx',
   output: {
-    path: path.join(__dirname, '/naive-router/js/'),
+    path: path.join(__dirname, '/js/'),
     filename: 'bundle.js'
   },
   devtool: '#sourcemap',
