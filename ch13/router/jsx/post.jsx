@@ -2,12 +2,13 @@ const React = require('react')
 
 module.exports = function Product(props) {
   let post = props.route.posts.find(element => element.slug == props.param.id)
+  const image = post.image
   return <section className="post">
     <h1>{post.title}</h1>
-    <img src={props.image} width="680" height="365" alt className="post-photo-full" />
+    <img src={image.location} width={image.width} height={image.height} alt className={image.class} />
     <div className="post-blurb">
       <p>
-        {props.text}
+        {post.text}
       </p>
     </div>
   </section>
