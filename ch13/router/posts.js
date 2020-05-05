@@ -7,7 +7,12 @@ module.exports = [{
     As I wandered around, enjoying shade provided by sycamore and laurel trees and serenaded by splashing water 
     from two sculptural fountains, I couldn\'t help but think of ancient Rome and the role of the garden 20 centuries ago. 
     It was a place of peace and …`,
-  image: '../img/gettyvilla.jpg'
+  image: {
+    location: '../img/gettyvilla.jpg',
+    width: 600,
+    height: 365,
+    class: 'post-photo-full'
+  }
 }, {
   slug: 'victoria',
   title: 'The City Named After Queen Victoria',
