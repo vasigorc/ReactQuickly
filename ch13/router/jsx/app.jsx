@@ -23,6 +23,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Home} >
       <Route path="/posts" component={Posts} posts={posts} />
+      <Route path="/posts/:id" component={Post} posts={posts} />
     </Route>
   </Router>
 ), document.getElementById('content'))
