@@ -11,8 +11,7 @@ const posts = require('../posts.js')
 
 let {
   Router,
-  Route,
-  Link
+  Route
 } = ReactRouter
 
 let hashHistory = ReactRouter.useHistory(History.createHashHistory)({
