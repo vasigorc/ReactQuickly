@@ -27,13 +27,7 @@ class Home extends React.Component {
               <Link to="/" activeClassName="current-page">Home</Link>
             </li>
             <li>
-              <Link to="/login" activeClassName="current-page">Login</Link>
-            </li>
-            <li>
               <Link to="/posts" activeClassName="current-page">Blog</Link>
-            </li>
-            <li>
-              <Link to="/contact" activeClassName="current-page">Contact Us</Link>
             </li>
           </ul>
         </nav>
