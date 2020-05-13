@@ -4,6 +4,7 @@ const ReactRouter = require('react-router')
 const History = require('history')
 
 const Home = require('./home.jsx')
+const Post = require('./post.jsx')
 const Posts = require('./posts.jsx')
 const { withRouter } = require('react-router')
 
@@ -14,7 +15,7 @@ let {
   Route
 } = ReactRouter
 
-let hashHistory = ReactRouter.useHistory(History.createHashHistory)({
+let hashHistory = ReactRouter.useRouterHistory(History.createHashHistory)({
   queryKey: false
 })
 
