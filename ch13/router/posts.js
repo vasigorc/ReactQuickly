@@ -8,7 +8,7 @@ module.exports = [{
     from two sculptural fountains, I couldn\'t help but think of ancient Rome and the role of the garden 20 centuries ago. 
     It was a place of peace and …`,
   image: {
-    location: '../img/gettyvilla.jpg',
+    location: 'img/gettyvilla.jpg',
     width: 600,
     height: 365,
     class: 'post-photo-full'
@@ -23,7 +23,7 @@ module.exports = [{
     of its spanning expansion. Representative yet inviting Victorian style municipal buildings, a protected harbor 
     and cobblestone streets populated with small shops and artisanal …`,
   image: {
-    location: '../img/victoria.jpg',
+    location: 'img/victoria.jpg',
     width: 370,
     height: 220,
     class: 'post-photo'
