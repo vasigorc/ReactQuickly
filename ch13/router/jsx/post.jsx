@@ -1,7 +1,7 @@
 const React = require('react')
 
-module.exports = function Product(props) {
-  let post = props.route.posts.find(element => element.slug == props.param.id)
+module.exports = function Post(props) {
+  let post = props.route.posts.find(element => element.slug == props.params.id)
   const image = post.image
   return <section className="post">
     <h1>{post.title}</h1>
