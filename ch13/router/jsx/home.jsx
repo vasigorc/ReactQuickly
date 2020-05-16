@@ -34,10 +34,12 @@ class Home extends React.Component {
         </nav>
       </header>
 
-      <div className="container clear-fix">
+      <div className="container clearfix">
         <main role="main">
           {this.props.children}
         </main>
+        {/**<!-- end main --> */}
+
         {/**<!-- start sidebar -->*/}
         <div className="sidebar">
           <article className="about">
