@@ -1,6 +1,8 @@
 # Logs
 logs
 *.log
+bundle.js
+bundle.js.map
 
 #Dependency directories
 node_modules
