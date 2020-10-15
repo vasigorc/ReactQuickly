@@ -9,3 +9,9 @@ node_modules
 
 #VSCode config folder
 **/.vscode
+
+# Ignore built ts files
+dist
+
+# Fedora thing
+.directory

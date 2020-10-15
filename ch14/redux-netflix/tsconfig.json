@@ -3,14 +3,26 @@
         "esModuleInterop": true,
         "incremental": true,
         "jsx": "react",
-        "lib": ["ES2015"],
+        "lib": ["DOM","ES2015"],
         "module": "CommonJS",
         "outDir": "dist",
         "sourceMap": true,
-        "strict": true,
-        "target": "ES2015"
+        "target": "ES2015",
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noEmitOnError": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true
     },
     "include": [
-        "src"
+        "src/**/*",
+        "test/**/*"
     ]
 }
