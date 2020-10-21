@@ -1,5 +1,42 @@
 {
-    "presets": ["es2015", "stage-0", "react"],
-    "plugins": ["transform-decorators-legacy"],
-    "sourceMaps": "inline"
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions and >= 1% not dead"
+          ]
+        },
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ],
+    "es2015",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "babel-plugin-styled-components",
+    [
+      "@babel/plugin-proposal-optional-chaining"
+    ],
+    [
+      "@babel/plugin-proposal-nullish-coalescing-operator"
+    ],
+    [
+      "@babel/proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3
+      }
+    ]
+  ],
+  "sourceMaps": "inline"
 }
