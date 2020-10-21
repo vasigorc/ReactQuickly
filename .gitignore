@@ -5,7 +5,7 @@ bundle.js
 bundle.js.map
 
 #Dependency directories
-node_modules
+node_modules/
 
 #VSCode config folder
 **/.vscode
