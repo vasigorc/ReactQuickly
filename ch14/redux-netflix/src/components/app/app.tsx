@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import styles from './app.css'
+import './app.css'
 
 interface Props {
     children: JSX.Element[]
@@ -8,7 +8,7 @@ interface Props {
 
 function App({ children }: Props): JSX.Element {
     return (
-        <div className={styles.app}>
+        <div className='app'>
             {children}
         </div>
     );

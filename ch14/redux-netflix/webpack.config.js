@@ -1,4 +1,9 @@
+'use strict';
+
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path')
+const root = path.join(__dirname);
 
 module.exports = {
   mode: 'development',
