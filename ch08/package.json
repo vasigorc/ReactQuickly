@@ -27,7 +27,7 @@
     "babelify": "^8.0.0",
     "bootstrap": "^3.4.1",
     "minimist": ">=0.2.1",
-    "mocha": "^7.1.1"
+    "mocha": "^10.2.0"
   },
   "type": "module"
 }
